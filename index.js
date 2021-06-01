@@ -3,7 +3,7 @@ const { text } = require("express");
 const express = require("express");
 const app = express();
 const hostname = '0.0.0.0'
-const port = 8080;
+const port = 3000;
 const { Telegraf } = require("telegraf");
 
 // const bot = new Telegraf(process.env.BOT_TOKEN)

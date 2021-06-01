@@ -7,7 +7,7 @@ const port = 8080;
 const { Telegraf } = require("telegraf");
 
 // const bot = new Telegraf(process.env.BOT_TOKEN)
-const bot = new Telegraf(bottoken);
+const bot = new Telegraf("1839890184:AAEipUjUkBRkX-rUG6w0mxmLntqQcV1F1Hk");
 
 // My variables
 const sec = 1000;

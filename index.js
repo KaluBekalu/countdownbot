@@ -74,6 +74,6 @@ app.get("/", (req,res)=>{
 
 bot.launch();
 
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log(`http://${hostname}:${port}`);
 });

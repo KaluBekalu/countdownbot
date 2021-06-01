@@ -2,6 +2,7 @@
 const { text } = require("express");
 const express = require("express");
 const app = express();
+const hostname = '0.0.0.0'
 const port = 8080;
 const { Telegraf } = require("telegraf");
 
@@ -67,8 +68,12 @@ bot.command("countdown", (ctx) => {
   );
 });
 
+app.get("/", (req,res)=>{
+    res.send("App Running!")
+})
+
 bot.launch();
 
 app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
+  console.log(`http://${hostname}:${port}`);
 });
